@@ -1,0 +1,38 @@
+/* Flexbox container */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #4dff88;
+   }
+   /* Flexbox items */
+   .flex-item {
+    background-color: #bbff99;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+   }
+   /* Grid container */
+   .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #00ffcc;
+    padding: 40px;
+   }
+   /* Grid items */
+   .grid-item {
+    background-color: #00e6e6;
+    text-align: center;
+    padding: 40px;
+   }
+   @media (max-width: 600px) {
+     .flex-container {
+       flex-direction: column;
+     }
+   
+     .grid-container {
+       grid-template-columns: 1fr;
+     }
+   }
